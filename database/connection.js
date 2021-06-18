@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const connectDB = async() => {
     try {
         // mongodb connection string
-        const con = await mongoose.connect("mongodb://localhost/mongot", {
+        const con = await mongoose.connect("mongodb://localhost/aliendata", {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useFindAndModify: false,

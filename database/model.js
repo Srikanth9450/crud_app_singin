@@ -19,6 +19,18 @@ const alienSchema = new mongoose.Schema({
         type: String,
         required: true
 
+    },
+    forget_password: {
+        data: String,
+        default: ""
+    },
+    refreshedToken: {
+        data: String,
+        default: ""
+    },
+    acessedToken: {
+        data: String,
+        default: ""
     }
 
 });

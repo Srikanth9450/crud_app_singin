@@ -10,11 +10,11 @@ connectDB();
 app.use(express.json())
 app.use(bodyparser.urlencoded({ extended: true }))
     //using a perticular router
-const alienRouter = require('./routes/alienauth')
+const alienRouter = require('./routes/alien')
 app.use("/aliens", alienRouter)
 app.set("view engine", "ejs")
 app.set("views", 'views')
 
-app.listen(3000, () => {
-    console.log("connected port 3000")
+app.listen(4000, () => {
+    console.log("connected port 4000")
 })
